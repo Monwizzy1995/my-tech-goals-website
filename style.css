@@ -1,0 +1,78 @@
+/* Basic reset and global styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    padding: 20px;
+    transition: background-color 0.3s ease;
+}
+
+body.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+header, main, footer {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+header.dark-mode, main.dark-mode, footer.dark-mode {
+    background-color: #444;
+    border-color: #666;
+}
+
+header h1, h2 {
+    color: #333;
+    text-align: center;
+}
+
+header.dark-mode h1, header.dark-mode h2 {
+    color: #fff;
+}
+
+main section {
+    margin-bottom: 20px;
+}
+
+section h2 {
+    color: #555;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+section.dark-mode h2 {
+    color: #ccc;
+    border-color: #666;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    color: #888;
+    margin-top: 20px;
+}
+
+footer.dark-mode {
+    color: #ccc;
+}
